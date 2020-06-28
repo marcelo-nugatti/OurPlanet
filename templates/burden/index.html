@@ -4,25 +4,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta name="theme-color" content="#111a30">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width">
     <title>OurPlanet</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+
+    <!-- Link CSS | Desktop -->
+    <link rel="stylesheet" href="{% static 'burden/css/ourplanet_desktop_1601.css' %}">
+
+    <!-- Link CSS | Responsive -->
+    <link rel="stylesheet" href="{% static 'burden/css/ourplanet_responsie_425.css' %}">
+
+    <!-- Link Favicon -->
+
+    <link rel="shortcut icon" href="{% static 'burden/img/favicon.png' %}" type="image/x-icon">
     
 </head>
 
 <body>
     <section class="section-1">
-       <form method="POST">
+
+        <div class="logo-ourplanet-form"></div>
+
+        <h1 class="title-form-ourplanet">Hola ¿Quieres conocer cuál<br>es tu peso en Marte? <span>¡Entérate ya!</span></h1>
+
+       <form class="form-ourplanet" method="POST">
            {% csrf_token %}
-           <h3> ¿Cuál es tu nombre? </h3>
+           <h3 class="label-input-name"> ¿Cuál es tu nombre? </h3>
            {% render_field weight.name class="input-name" %}
-           <h3>¿Cuanto es tu peso en la tierra</h3>
+           <h3 class="label-input-weight">¿Cuánto es tu peso en la tierra?</h3>
            {% render_field weight.weight class="input-weight" %}
 
-           <button type="submit"> Calcular </button>
+           <button class="button-submit-ourplanet" type="submit">Calcular </button>
        </form> 
+
+       <p class="message-form-ourplanet">Errar es humano, por ende el algoritmo no es perfecto y por<br>defecto tu peso en Marte no será exacto, pero<br> oye, <span>¡Intentarlo no cuesta nada!</span> ;)</p>
        
     </section>
-    
-    
+
 </body>
 </html>

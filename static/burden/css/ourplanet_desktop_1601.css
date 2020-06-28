@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'Helvetica', 'Arial';
+}
+
+*::selection{
+    background: #FFA012;
+    color: #ffffff;
+}
+
+body{
+    background: #111a30;
+}
+
+.section-1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10vw auto 0 auto;
+    width: 25vw;
+}
+
+.logo-ourplanet-form{
+    display: flex;
+    width: 17.2vw;
+    height: 3.7vw;
+    background-image: url(../img/logo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.title-form-ourplanet{
+    color: #dee8ff;
+    font-size: 1.5vw;
+    font-weight: 500;
+    text-align: center;
+    margin: 1vw 0;
+}
+
+.title-form-ourplanet 
+span{
+    font-weight: 600;
+}
+
+/* --- */
+
+.form-ourplanet{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 1vw 0 0 0;
+}
+
+.label-input-name{
+    display: flex;
+    color: #96a0b7;
+    font-weight: 500;
+    font-size: 0.825vw;
+    margin: 0 0 0.75vw 0;
+}
+
+.input-name{
+    display: flex;
+    width: 100%;
+    background: #0F172C;
+    border: none;
+    padding: 0 1vw;
+    height: 3vw;
+    outline: none;
+    border-radius: 0.5vw;
+    color: #96a0b7;
+}
+
+/* --- */
+
+.label-input-weight{
+    display: flex;
+    color: #96a0b7;
+    font-weight: 500;
+    font-size: 0.825vw;
+    margin: 1vw 0 0.75vw 0;
+}
+
+.input-weight{
+    display: flex;
+    width: 100%;
+    background: #0F172C;
+    border: none;
+    padding: 0 1vw;
+    height: 3vw;
+    outline: none;
+    border-radius: 0.5vw;
+    color: #96a0b7;
+}
+
+/* --- */
+
+.button-submit-ourplanet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffa012;
+    color: #ffffff;
+    font-size: 1.3vw;
+    font-weight: 600;
+    border: none;
+    height: 3.5vw;
+    margin: 1.25vw 0 0 0;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}
+
+/* --- */
+
+.message-form-ourplanet{
+    font-size: 0.75vw;
+    color: #96a0b7;
+    margin: 1vw 0 0 0;
+    text-align: center;
+}
+
+.message-form-ourplanet 
+span{
+    color: #FFA012;
+}
