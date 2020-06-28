@@ -1,0 +1,28 @@
+{% load static %}
+{% load widget_tweaks %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>OurPlanet</title>
+    
+</head>
+
+<body>
+    <section class="section-1">
+       <form method="POST">
+           {% csrf_token %}
+           <h3> ¿Cuál es tu nombre? </h3>
+           {% render_field weight.name class="input-name" %}
+           <h3>¿Cuanto es tu peso en la tierra</h3>
+           {% render_field weight.weight class="input-weight" %}
+
+           <button type="submit"> Calcular </button>
+       </form> 
+       
+    </section>
+    
+    
+</body>
+</html>
