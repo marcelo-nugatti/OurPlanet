@@ -6,16 +6,31 @@
 <head>
     <meta charset="utf-8">
     <title>OurPlanet</title>
+
+    <!-- Desktop: 0000 -->
+    <link rel="stylesheet" href="{% static 'burden/css/end.css' %}">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
     
 </head>
 
 <body>
+    <div class="flecha"></div>
     <section class="section-1">
-           <h3> Hola {{ data.name }} </h3>
-           <h3> Tu peso exacto en marte es {{ algorithm }}kl. </h3>
-
-        
+        <div class="section-team">
+            <div class="logo"></div>
+            <h3 class="sect1"> Hola <span class="span-name">{{ data.name }}<span> </h3>
+            <h3 class="sect2"> Tu peso exacto en Marte es: <h3>   
+            <h3 class="sect3"> {{ algorithm }} KL. </h3>
+            <a class="button" href="">Reiniciar</a>
+            <p class="text-footer"> Hahaha te la creíste, nuestro algoritmo sí es perfecto y calculó 
+                                    exactamente tu peso en Marte :)
+                                    #TeAmamos
+            </p>
+        </div>
     </section>
+    
     
 </body>
 </html>

@@ -1,0 +1,50 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    background: #111A30;
+    color: #ffffff;
+    font-family: 'Open Sans', 'Helvetica', 'Arial' ;
+
+}
+
+.flecha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5vw;
+    height: 2.5vw;
+    background-image: url(../../burden/img/flecha.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14vw;
+    height: 3vw;
+    background-image: url(../../burden/img/logo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.section-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+} 
+
+.section-team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.sect1{
+
